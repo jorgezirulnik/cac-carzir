@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    text-align: center;
+}
+
+#logoMarcaAuto {
+    display: flex;
+    margin: 30px;
+    gap: 10px;
+    font-weight: bolder;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.content {
+    position: relative;
+    width: 300%;
+    display: flex;
+    transition: 400ms ease-in-out;
+}
+
+.slider input {
+    visibility: hidden;
+    display: none;
+
+}
+
+.buttons {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        bottom: 50px;
+        gap: 10px;
+    }
+    
+
+.buttons label {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 1;
+    transition: 300ms ease-in-out;
+    border-radius: 50%;
+}
+
+.buttons label:hover {
+    scale: 1.2;
+    opacity: 1;
+}
+
+.slider input:nth-child(1):checked~.buttons label:nth-child(1),
+.slider input:nth-child(2):checked~.buttons label:nth-child(2),
+.slider input:nth-child(3):checked~.buttons label:nth-child(3) {
+    opacity: 1;
+    scroll-margin: 1.2;
+    background-color: rgb(6, 70, 248);
+}
+
+.slider input:nth-child(1):checked~.content {
+    left: 0;
+}
+
+.slider input:nth-child(2):checked~.content {
+    left: -100vw;
+}
+
+.slider input:nth-child(3):checked~.content {
+    left: -200vw;
+}
+
+/* PEUGEOT */
+.firstslide img,
+.secondslide img,
+.thirdslide img {
+    max-width: 50%;
+    /* ancho máximo */
+    max-height: 50%;
+    /* altura máxima */
+}
+
+.firstslide,
+.secondslide,
+.thirdslide {
+    position: relative;
+    width: 100vw;
+    height: calc(100% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TOYOTA */
+.firstslideT img,
+.secondslideT img,
+.thirdslideT img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.firstslideT,
+.secondslideT,
+.thirdslideT {
+    position: relative;
+    width: 100vw;
+    height: calc(100% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* VOLKSWAGEN */
+
+.firstslideV img,
+.secondslideV img,
+.thirdslideV img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.firstslideV,
+.secondslideV,
+.thirdslideV {
+    position: relative;
+    width: 100vw;
+    height: calc(100% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CITROEN  */
+.firstslideCI img,
+.secondslideCI img,
+.thirdslideCI img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.firstslideCI,
+.secondslideCI,
+.thirdslideCI {
+    position: relative;
+    width: 100vw;
+    height: calc(100% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CHEVROLET */
+
+.firstslideC img,
+.secondslideC img,
+.thirdslideC img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.firstslideC,
+.secondslideC,
+.thirdslideC {
+    position:relative;
+    width: 100vw;
+    height: calc(100% - 50px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+ }
+.slider {
+    position: relative;
+    overflow-x: hidden;
+    /* Sin desplazamiento horizontal */
+
+}
+
+a:hover {
+    color: whitesmoke;
+    transform: scale(1.2);
+    transition: color 0.3s ease, transform 0.3s ease;
+    /*Animacion de link*/
+}
+
+.img{
+    aspect-ratio: 16 / 9;
+}

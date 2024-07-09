@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+} 
+
+.container {
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    background-color: #ffffff;
+    color: var(--colorTexto);
+}
+
+button {
+    background-color: var(--colorHedaerFooter);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3700b3;
+}
+
+#message {
+    margin-top: 20px;
+}
+
+
+/* Nuevos estilos para el listado de vehículos */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.liAutos {
+    background-color: var(--colorHedaerFooter);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .liAutos {
+    background-color: var(--bgColorFondo);
+} */
+
+li button {
+    background-color: var(--colorBoton); /* #d32f2f;*/
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+li button:hover {
+    background-color: #5269ce;
+}
