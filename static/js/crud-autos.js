@@ -10,8 +10,8 @@ document.getElementById('autoForm').addEventListener('submit', function(event) {
   const dominio = document.getElementById('dominio').value;
   // const foto = document.getElementById('foto').files[0];
 
-  console.log("Datos del producto:", { autoId, nombre, marca, modelo, dominio, foto });
-  console.log("FOTO", foto, "TIPO: ", typeof(foto));
+  // console.log("Datos del producto:", { autoId, nombre, marca, modelo, dominio, foto });
+  // console.log("FOTO", foto, "TIPO: ", typeof(foto));
 
   let formData = new FormData();
   formData.append('autoId', autoId);
