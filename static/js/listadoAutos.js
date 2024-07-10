@@ -1,5 +1,5 @@
 // Listado de vehículos
-// const CARZIR_BACKEND = "http://127.0.0.1:5000/autos";
+// const CARZIR_BACKEND = "http://127.0.0.1:5000";
 import { CARZIR_BACKEND } from "./config.js";
 
 const options = {
